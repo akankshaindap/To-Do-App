@@ -40,10 +40,10 @@ const Task = () => {
     }
   return (
    <>
-   <div className='center m-7 p-6 border-gray-500 border  bg-purple-100'>
-       <input type='text' placeholder='Enter Your Task'  className='p-1 m-2 shadow-md center rounded w-60 sm:w-96 ' value={newTask} onChange={handleInput}/>
+   <div className='center m-5 p-6 border-gray-400 border bg-blue-100'>
+       <input type='text' placeholder='Enter Your Task...'  className='p-1 m-2 shadow-md center rounded w-50 sm:w-96 ' value={newTask} onChange={handleInput}/>
    <button className='bg-green-500 p-2 hover:bg-green-600 rounded  text-white w-24 shadow-md  addButton' onClick={addTask}>Add</button>
-     <ul className='list-decimal'>
+     <ul>
     {task.map((task,i)=>
     <li className='  border-l-green-600 border flex p-1  'key={i}>
       <span className='flex-1'> {task} </span>
